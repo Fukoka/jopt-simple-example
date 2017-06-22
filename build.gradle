@@ -4,6 +4,13 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
+repositories {
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+}
+
 dependencies {
-    compile 'net.sf.jopt-simple:jopt-simple:4.9'
+    testCompile 'net.sf.jopt-simple:jopt-simple:4.9'
+    testCompile 'junit:junit:4.12'
 }
